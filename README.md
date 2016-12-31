@@ -7,3 +7,11 @@ right click the file in windows, then run with PowerShell, make sure only one In
 a new file “tofile.csv” will be generated  
 it seems SSAS embeded with PowerBI desktop is configured to time out after 30 Seconds, so if you are trying to export very large datasets try to do the export by a smaller chunck, I test it with a 3 Mi tables and it does work    
 some people notice an improvement when they change the export file from csv to txt  
+
+# USE CASES
+
+PowerQuery does not Export to CSV, it become an issue when the result of the transformation is > 1 Mil, the workaround is to copy the Query in Power BI desktop and export to csv using the current script.  
+
+an interesting use case if you are working with MS Access ,SQL Server express or SQLITE, you can use PowerBI desktop as an ETL tool :)  
+
+
