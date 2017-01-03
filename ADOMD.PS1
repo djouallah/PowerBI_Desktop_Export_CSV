@@ -24,7 +24,7 @@ $query = “evaluate Table1”
  
 # Create the first connection object  
 $con = new-object Microsoft.AnalysisServices.AdomdClient.AdomdConnection 
-$con.ConnectionString = "Datasource=$dataSource; Initial Catalog=$Database_Name;" 
+$con.ConnectionString = "Datasource=$dataSource; Initial Catalog=$Database_Name;timeout=0; connect timeout =0" 
 $con.Open() 
 
 "Datasource= " +$dataSource
