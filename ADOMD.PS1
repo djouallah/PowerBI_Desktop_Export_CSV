@@ -18,6 +18,8 @@ $query = “evaluate Table1”
 
 
 # Connect using ADOMD.NET
+#Another option is to use SQL_AS_ADOMD 2016, YOU CAN DOWNLOAD IT FROM HERE
+#https://www.microsoft.com/en-us/download/details.aspx?id=52676
 
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices.AdomdClient") 
 #[Microsoft.AnalysisServices.AdomdClient.AdomdConnection]  
