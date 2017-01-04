@@ -24,10 +24,10 @@ $Database_Name = $Database_Name.ToString().Split(".") | select -First 1
 
 # the code is from this web site http://www.kasperonbi.com/dump-the-results-of-a-dax-query-to-csv-using-powershell/
 
-$connectionString = ìProvider=MSOLAP;Data Source=$dataSource;Initial Catalog=$Database_Name;î
-$query = ìevaluate Table1î
+$connectionString = ‚ÄúProvider=MSOLAP;Data Source=$dataSource;Initial Catalog=$Database_Name;‚Äù
+$query = "evaluate Table1"
 
-$filename = ìtofile.csvî
+$filename = "tofile.csv"
  
 $connection = New-Object -TypeName System.Data.OleDb.OleDbConnection
 
