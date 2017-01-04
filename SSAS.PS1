@@ -24,7 +24,7 @@ $Database_Name = $Database_Name.ToString().Split(".") | select -First 1
 
 # the code is from this web site http://www.kasperonbi.com/dump-the-results-of-a-dax-query-to-csv-using-powershell/
 
-$connectionString = “Provider=MSOLAP;Data Source=$dataSource;Initial Catalog=$Database_Name;”
+$connectionString = "Provider=MSOLAP;Data Source=$dataSource;Initial Catalog=$Database_Name;"
 $query = "evaluate Table1"
 
 $filename = "tofile.csv"
