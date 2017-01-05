@@ -20,3 +20,4 @@ PowerQuery does not Export to CSV, it become an issue when the result of the tra
 an interesting use case if you are working with MS Access ,SQL Server express or SQLITE, you can use PowerBI desktop as an ETL tool :)  
 
 
+if you are on windows 7, you need first to start the script PS, see more details here http://stackoverflow.com/questions/2094694/how-can-i-run-powershell-with-the-net-4-runtime?noredirect=1&lq=1 
