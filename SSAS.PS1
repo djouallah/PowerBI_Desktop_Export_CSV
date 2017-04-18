@@ -36,6 +36,8 @@ $command = $connection.CreateCommand()
 $command.CommandText = $query
 $adapter = New-Object -TypeName System.Data.OleDb.OleDbDataAdapter $command
 $dataset = New-Object -TypeName System.Data.DataSet
+# CommandTimeout increased to 4 minutes
+$adapter.SelectCommand.CommandTimeout = 240
 $adapter.Fill($dataset)
 
 $dataset.Tables[0] | export-csv $filename -notypeinformation
